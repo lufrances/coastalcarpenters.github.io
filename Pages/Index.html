@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../Pages/Main.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../Pages/Main.js"></script>
+</head>
+<!-- NAV BAR -->
+<body>
+<header>
+  <nav>
+    <label class="toggle">
+        </label>
+        <ul>
+          <li><a class="active" href='../Pages/Index.html'>Home</a></li>
+          <li><a href='../Pages/Services.html'>Services</a></li>
+          <li><a href='../Pages/Contact.html'>Contact Us</a></li>
+        </ul>
+    <div class="socialtop">
+     <div class='top-social'>
+       <a href='http://www.facebook.com/coastalcarpentersuk'><img src="../img/facebook.png" width=30 height=30></a>
+            <a href='http://www.instagram.com/coastalcarpenters'><img src="../img/instagram.png" width=30 height=30></a>
+            <div class="search-container">
+            <form method="get" action="">
+            <input type="text" name="search" placeholder="Search...">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+          </div>
+        <div class="results-container">
+           <ul class="results-list" id="list">
+          </ul>
+        </div>
+        </div>
+      </div>
+      </div>
+  </div>
+</nav>
+</header>
+<!-- IMAGE SLIDER -->
+  <div class="container">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img class="img scroll" src="../img/Kitchen1.jpeg" style="width:100%" alt="kitchen">
+          </div>
+        <div class="mySlides fade">
+            <img class="img scroll" src="../img/kitchen3.jpeg" style="width:100%" alt="kitchen">
+          </div>
+        <div class="mySlides fade">
+            <img class="img scroll" src="../img/Wardrobes1.jpeg" style="width:100%" alt="wardrobes">
+          </div>
+        <div class="mySlides fade">
+            <img class="img scroll" src="../img/bathroom2.jpeg" style="width:100%" alt="bathroom">
+          </div>
+        <div class="mySlides fade">
+          <img class="img scroll" src="../img/bathroom.jpeg" style="width:100%" alt="bathroom">
+        </div>
+
+        </div>
+      </div>
+
+      </div>
+    <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+      <script src="../Pages/Main.js"></script> 
+    </div>
+  </div>
+  <!-- LOGO OVER PHOTO -->
+<main class="index">
+  <div class="logo">
+    <h1>Coastal Carpenters</h1>
+      <div class="subheading">
+        <h3>Building Services</h3>
+      </div>
+    </div>
+<!-- First Heading and Paragraph -->
+<div class="section-one">
+      <h2>Bournemouth Christchurch Poole</h2>
+
+      <hr>
+
+      <p> We are a friendly and professional team, specialising in all aspects of carpentry and joinery.<br>
+        Our mission at Coastal Carpenters is simple; to provide high-quality services for our valued clients.<br>
+      we provide ourselves on excellent customer service and exceptional workmanship.<br>
+      Our team goes above and beyond to cater to each project's specific needs.<br>
+      For more information or to arrange a free no obligation quote, please get in touch today.
+      </p>
+    </div>
+  </main>
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>contact</h4>
+        <ul>
+          <li>Phone: 0776666 666666</a></li>
+          <li>Email: coastalcarpenters@gmail.com</a></li>
+          <li>&copy; coastalcarpenters</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href='http://www.facebook.com/coastalcarpentersuk'><i class="fab fa-facebook-f"></i></a>
+          <a href='http://www.instagram.com/coastalcarpenters'><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Pop Up -->
+<div class="popup">
+  <button id="close">&times;</button>
+  <h2>Do you have Facebook?</h2>
+  <p>Follow us on Facebook for regular updates, rave reviews and more!</p>
+  <a href='http://www.facebook.com/coastalcarpentersuk'>Let's Go </a>
+</div>
+ <!-- Script for Pop Up-->
+<script type="text/javascript">
+  window.addEventListener("load",function(){
+    setTimeout (
+          function (event){
+              document.querySelector(".popup").style.display = "block";
+              },
+          1000 )
+});
+
+  document.querySelector("#close",).addEventListener("click", function(event){
+      document.querySelector(".popup").style.display = "none" 
+  }) 
+</script>
+
+</body>
+</html>
+
+
+
+
